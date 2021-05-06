@@ -1,0 +1,46 @@
+
+def max(TAB):
+    m=TAB[0]
+    for i in range(len(TAB)):
+        if (TAB[i]>=m):
+            m=TAB[i]
+    return m
+
+
+def min(TAB):
+    m=TAB[0]
+    for i in range(len(TAB)):
+        if (TAB[i]<=m):
+            m=TAB[i]
+    return m
+
+def moy(TAB):
+    m=0
+    for i in range(len(TAB)):
+        m=TAB[i]+m
+    m=m/len(TAB)
+    return m
+
+
+
+tab=[]
+note=int(input("entrez première valeur"))
+
+while (note>=0):
+    tab.append(note)
+    note=int(input("entrez une valeur"))
+
+print("la moyenne est :")
+print(moy(tab))
+print("la valeur maximale est :")
+print(max(tab))
+print("la valeur minimale est :")
+print(min(tab))
+print("le nombre entrée est :")
+print(len(tab))
+
+
+
+
+
+
